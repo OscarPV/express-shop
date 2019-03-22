@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCS - Crear</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Scripts -->
+</head>
+<body>
+    <header>Navigation</header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">Cargar FCS</div>
+            </div>
+            <form action="/fcs/crear" method="POST">
+                <div class="form-group row">
+                    <label for="folio" class="col-lg-2 col-form-label">Folio</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="folio" class="form-control" id="folio">
+                    </div>
+                    <label for="tipo-movimiento" class="col-lg-2 col-form-label">Tipo de movimiento</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="tipo-movimiento" class="form-control" id="tipo-movimiento">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="fecha-emision" class="col-lg-2 col-form-label">Fecha de emisión</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="fecha-emision" class="form-control" id="fecha-emision">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="qo" class="col-lg-2 col-form-label">QO</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="qo" class="form-control" id="qo">
+                    </div>
+                    <label for="cotizacion" class="col-lg-2 col-form-label">Cotización</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="cotizacion" class="form-control" id="cotizacion">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="orden-aprovisionamiento" class="col-lg-2 col-form-label">Orden Aprovisionamiento</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="orden-aprovisionamiento" class="form-control" id="orden-aprovisionamiento">
+                    </div>
+                    <label for="nombre-cap" class="col-lg-2 col-form-label">Nombre del CAP</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="nombre-cap" class="form-control" id="nombre-cap">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="telefono-cap" class="col-lg-2 col-form-label">Teléfono</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="telefono-cap" class="form-control" id="telefono-cap">
+                    </div>
+                    <label for="correo-electronico" class="col-lg-2 col-form-label">Correo electrónico</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="correo-electronico" class="form-control" id="correo-electronico">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="cup" class="col-lg-2 col-form-label">CUP</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="cup" class="form-control" id="cup">
+                    </div>
+                    <label for="nombre-cup" class="col-lg-2 col-form-label">Nombre CUP</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="nombre-cup" class="form-control" id="nombre-cup">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nombre-cliente" class="col-lg-2 col-form-label">Nombre Cliente</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="nombre-cliente" class="form-control" id="nombre-cliente">
+                    </div>
+                    <label for="tipo-servicio" class="col-lg-2 col-form-label">Tipo de servicio</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="tipo-servicio" class="form-control" id="tipo-servicio">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="rfc" class="col-lg-2 col-form-label">RFC</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="rfc" class="form-control" id="rfc">
+                    </div>
+                    <label for="numero-cliente" class="col-lg-2 col-form-label">Número de cliente</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="numero-cliente" class="form-control" id="numero-cliente">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="numero-sitio" class="col-lg-2 col-form-label">Número de Sitio</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="numero-sitio" class="form-control" id="numero-sitio">
+                    </div>
+                    <label for="nombre-sitio" class="col-lg-2 col-form-label">Nombre de Sitio</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="nombre-sitio" class="form-control" id="nombre-sitio">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="telefono-id-sala" class="col-lg-4 col-form-label">Número telefónico identificador de la sala</label>
+                    <div class="col-lg-8">
+                        <input type="text" name="telefono-id-sala" class="form-control" id="telefono-id-sala">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="calle" class="col-lg-4 col-form-label">Calle</label>
+                    <div class="col-lg-8">
+                        <input type="text" name="calle" class="form-control" id="calle">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="entre-calles" class="col-lg-4 col-form-label">Entre calles</label>
+                    <div class="col-lg-8">
+                        <input type="text" name="entre-calles" class="form-control" id="entre-calles">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="cp" class="col-lg-2 col-form-label">Código Postal</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="cp" class="form-control" id="cp">
+                    </div>
+                    <label for="municipio" class="col-lg-2 col-form-label">Municipio</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="municipio" class="form-control" id="municipio">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="colonia" class="col-lg-2 col-form-label">Colonia</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="colonia" class="form-control" id="colonia">
+                    </div>
+                    <label for="ciudad" class="col-lg-2 col-form-label">Ciudad</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="ciudad" class="form-control" id="ciudad">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="estado" class="col-lg-2 col-form-label">Estado</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="estado" class="form-control" id="estado">
+                    </div>
+                    <label for="pais" class="col-lg-2 col-form-label">País</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="pais" class="form-control" id="pais">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="piso" class="col-lg-2 col-form-label">Piso</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="piso" class="form-control" id="piso">
+                    </div>
+                    <label for="despacho" class="col-lg-2 col-form-label">Despacho</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="despacho" class="form-control" id="despacho">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="domicilio-anterior" class="col-lg-4 col-form-label">Domicilio anterior</label>
+                    <div class="col-lg-8">
+                        <input type="text" name="domicilio-anterior" class="form-control" id="domicilio-anterior">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="responsable-instalacion" class="col-lg-4 col-form-label">Responsable de instalación (En el sitio)</label>
+                    <div class="col-lg-8">
+                        <input type="text" name="responsable-instalacion" class="form-control" id="responsable-instalacion">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="caso-instalacion" class="col-lg-2 col-form-label">Caso de Instalación</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="caso-instalacion" class="form-control" id="caso-instalacion">
+                    </div>
+                    <label for="telefono-instalacion" class="col-lg-2 col-form-label">Teléfono</label>
+                    <div class="col-lg-4">
+                        <input type="text" name="telefono-instalacion" class="form-control" id="telefono-instalacion">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col text-center">
+                        <h3>Servicios que se compran</h3>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="form-row">
+                            <div class="col-lg-4">
+                                <input type="text" name="numero-parte" class="form-control" placeholder="Número de parte">
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" name="id-componente" class="form-control" placeholder="Id de componente">
+                            </div>
+                            <div class="col-lg-2">
+                                <input type="text" name="cantidad" class="form-control" placeholder="Cantidad">
+                            </div>
+                            <div class="col-lg-2">
+                                <input type="text" name="precio" class="form-control" placeholder="Precio">
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
